@@ -1,0 +1,16 @@
+[
+  {
+    "id": "c4500215-376b-46b8-ab85-4a955e8deb6a",
+    "name": "moha",
+    "email": "simoar493@gmail.com",
+    "password": "$2a$12$E2227nyCKTaarTy.a4TKOOzpxRBZJ1sdjCtIx3QlYNJhHQcHpihQi",
+    "createdAt": "2026-05-06T16:52:02.101Z"
+  },
+  {
+    "id": "37a5d62a-8847-44bd-8100-0762734b7d5c",
+    "name": "Test User",
+    "email": "test@skybot.com",
+    "password": "$2a$12$WY3TgSuMITgDyz3tLLxaJepO9SHfGBOXQZrGstwTiU/k49HKAaf8W",
+    "createdAt": "2026-05-06T17:13:00.021Z"
+  }
+]
