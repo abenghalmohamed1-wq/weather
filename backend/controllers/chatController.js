@@ -93,7 +93,7 @@ Key guidelines:
 - If asked about non-weather topics, politely redirect to weather-related questions
 ${weatherContext}`;
 
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-lite' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
     const result = await model.generateContent(`${systemPrompt}\n\nUser message: ${message}`);
     const reply = result.response.text();
 

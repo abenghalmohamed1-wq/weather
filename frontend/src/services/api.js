@@ -12,6 +12,19 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
+// Response interceptor to handle 401 errors (token expired/invalid)
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response && error.response.status === 401) {
+      localStorage.removeItem('skybot_token');
+      localStorage.removeItem('skybot_user');
+      window.location.href = '/login';
+    }
+    return Promise.reject(error);
+  }
+);
+
 // Auth
 export const registerUser = (data) => api.post('/auth/register', data);
 export const loginUser = (data) => api.post('/auth/login', data);
