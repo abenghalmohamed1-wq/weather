@@ -1,1 +1,68 @@
-[]
+[
+  {
+    "sessionId": "7073790f-6dfc-4bc6-9e82-469a15f86550",
+    "userId": "c4500215-376b-46b8-ab85-4a955e8deb6a",
+    "title": "how is the weather in paris",
+    "messages": [
+      {
+        "id": "5763eb36-41a2-4022-a835-6e1bed3316e2",
+        "role": "user",
+        "content": "how is the weather in paris",
+        "timestamp": "2026-05-26T02:40:18.815Z"
+      },
+      {
+        "id": "13d11692-e0ec-4b3b-914f-58c9a0855b13",
+        "role": "assistant",
+        "content": "Hello! In Paris right now, it's a beautiful day! ☀️ The temperature is 19.55°C, feeling like 19.26°C, with a clear sky. Humidity is 65% and there's a gentle wind of 2.06 m/s.\n\nIt's perfect weather for light clothing. Enjoy your day! 😊",
+        "timestamp": "2026-05-26T02:40:18.815Z"
+      },
+      {
+        "id": "c8eb702c-15f6-485b-aad2-07c0942346aa",
+        "role": "user",
+        "content": "tank you",
+        "timestamp": "2026-05-26T02:42:52.669Z"
+      },
+      {
+        "id": "2ff107a1-ddd9-479d-990a-c68425d5625f",
+        "role": "assistant",
+        "content": "You're very welcome! 😊\n\nI'm here to help you with any weather conditions, forecasts, climate patterns, or atmospheric science questions you might have. Feel free to ask anything! ☁️☀️🌧️",
+        "timestamp": "2026-05-26T02:42:52.669Z"
+      }
+    ],
+    "createdAt": "2026-05-26T02:40:18.815Z",
+    "updatedAt": "2026-05-26T02:42:52.669Z"
+  },
+  {
+    "sessionId": "67cdaa33-fbad-4a62-9aeb-32da638b5dfe",
+    "userId": "c4500215-376b-46b8-ab85-4a955e8deb6a",
+    "title": "hi",
+    "messages": [
+      {
+        "id": "fe92adfa-6317-4224-b998-aae85c5dc7d5",
+        "role": "user",
+        "content": "hi",
+        "timestamp": "2026-05-26T02:51:57.650Z"
+      },
+      {
+        "id": "7e5e3c50-a168-4f72-842d-1f95780f22f7",
+        "role": "assistant",
+        "content": "Hello there! 👋 I'm SkyBot, your friendly AI weather assistant. I can help you understand weather conditions, forecasts, climate patterns, and more.\n\nHow can I help you with the weather today? 🌦️",
+        "timestamp": "2026-05-26T02:51:57.651Z"
+      },
+      {
+        "id": "53c15dbb-8b06-4138-b65d-46e5a72b9391",
+        "role": "user",
+        "content": "salam",
+        "timestamp": "2026-05-26T02:52:08.046Z"
+      },
+      {
+        "id": "e72d8aae-1510-42ab-af34-3b7395b478d9",
+        "role": "assistant",
+        "content": "أهلاً بك! 👋 أنا سكايبوت، مساعدك الخبير للطقس. كيف يمكنني مساعدتك بخصوص أحوال الطقس اليوم؟ ☁️",
+        "timestamp": "2026-05-26T02:52:08.046Z"
+      }
+    ],
+    "createdAt": "2026-05-26T02:51:57.651Z",
+    "updatedAt": "2026-05-26T02:52:08.046Z"
+  }
+]
