@@ -94,7 +94,7 @@ app.use((err, req, res, next) => {
 // SERVER STARTUP
 // ============================================================================
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`
 ╔════════════════════════════════════════════════════════════════╗
 ║     AI Weather Chatbot - Phase 2 (Production Backend)         ║

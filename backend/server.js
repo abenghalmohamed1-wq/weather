@@ -33,7 +33,8 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: 'Internal server error' });
 });
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`🚀 SkyBot API running at http://localhost:${PORT}`);
+const PORT = process.env.PORT || 5000; 
+
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running successfully and listening on port ${PORT}`);
 });
