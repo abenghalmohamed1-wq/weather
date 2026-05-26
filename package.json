@@ -21,24 +21,24 @@
     "author": "Your Name",
     "license": "MIT",
     "dependencies": {
-        "express": "^4.18.2",
-        "cors": "^2.8.5",
-        "dotenv": "^16.3.1",
-        "mongoose": "^8.0.0",
-        "axios": "^1.6.0",
-        "openai": "^4.24.0",
-        "langchain": "^0.1.24",
         "@langchain/openai": "^0.0.23",
-        "uuid": "^9.0.1",
-        "helmet": "^7.1.0",
-        "express-rate-limit": "^7.0.0",
+        "axios": "^1.16.1",
         "bcryptjs": "^2.4.3",
-        "jsonwebtoken": "^9.0.2"
+        "cors": "^2.8.6",
+        "dotenv": "^16.6.1",
+        "express": "^4.22.2",
+        "express-rate-limit": "^7.0.0",
+        "helmet": "^7.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "langchain": "^0.1.24",
+        "mongoose": "^8.0.0",
+        "openai": "^4.24.0",
+        "uuid": "^9.0.1"
     },
     "devDependencies": {
-        "nodemon": "^3.0.2",
+        "dotenv-cli": "^7.3.0",
         "jest": "^29.7.0",
-        "supertest": "^6.3.3",
-        "dotenv-cli": "^7.3.0"
+        "nodemon": "^3.0.2",
+        "supertest": "^6.3.3"
     }
 }
