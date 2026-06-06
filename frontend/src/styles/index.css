@@ -82,6 +82,7 @@ body {
 .btn-danger:hover { background: rgba(255,82,82,0.25); }
 .btn-lg { padding: 16px 32px; font-size: 1rem; border-radius: 14px; }
 .btn-sm { padding: 8px 16px; font-size: 0.85rem; border-radius: 10px; }
+.btn.icon-btn { padding: 0; width: 48px; height: 48px; flex-shrink: 0; font-size: 1.2rem; }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
 
 /* ============ FORMS ============ */
@@ -174,6 +175,7 @@ body {
 .home-hero p { color: var(--muted); margin-top: 12px; font-size: 1.05rem; }
 .search-bar { display: flex; gap: 10px; max-width: 520px; margin: 28px auto 0; }
 .search-bar .form-input { flex: 1; }
+.search-actions { display: flex; gap: 10px; }
 .weather-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 960px; margin: 32px auto; padding: 0 20px; }
 .forecast-section { max-width: 960px; margin: 0 auto; padding: 0 20px; }
 
@@ -330,6 +332,7 @@ body {
   .auth-card { padding: 36px 24px; }
   .chat-bubble { max-width: 92%; }
   .search-bar { flex-direction: column; }
+  .search-actions { width: 100%; }
   .stats-row .stat-box { padding: 20px 28px; }
   .page { padding: 80px 0 60px; }
 }

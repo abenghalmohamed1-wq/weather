@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const authMiddleware = require('../middleware/authMiddleware');
 const { getCurrentWeather, getForecast } = require('../controllers/weatherController');
 
-router.get('/current', authMiddleware, getCurrentWeather);
-router.get('/forecast', authMiddleware, getForecast);
+// Weather data is public — no auth required.
+// This ensures geolocation and city search work even before login.
+router.get('/current', getCurrentWeather);
+router.get('/forecast', getForecast);
 
 module.exports = router;

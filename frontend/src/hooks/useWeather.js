@@ -45,14 +45,35 @@ export const useWeather = () => {
           setForecast(forecastRes.data);
           setCity(weatherRes.data.name);
         } catch (err) {
-          setError(err.response?.data?.message || 'Failed to fetch weather data.');
+          console.error('Weather fetch error:', err);
+          setError(err.response?.data?.message || 'Failed to fetch weather data for your location.');
         } finally {
           setLoading(false);
         }
       },
       (err) => {
-        setError('Location access denied. Please search for a city.');
+        let message;
+        switch (err.code) {
+          case err.PERMISSION_DENIED:
+            message = 'Location access was denied. Please allow location access in your browser settings, or search for a city manually.';
+            break;
+          case err.POSITION_UNAVAILABLE:
+            message = 'Your location could not be determined. Please try again or search for a city.';
+            break;
+          case err.TIMEOUT:
+            message = 'Location request timed out. Please check your connection and try again.';
+            break;
+          default:
+            message = 'An unknown error occurred while getting your location.';
+        }
+        console.error('Geolocation error:', err.message);
+        setError(message);
         setLoading(false);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 300000, // cache position for 5 minutes
       }
     );
   }, []);

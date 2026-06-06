@@ -37,8 +37,10 @@ export default function Home() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
-            <button id="search-btn" className="btn btn-primary" type="submit">Search</button>
-            <button id="location-btn" type="button" className="btn btn-secondary" onClick={fetchByLocation} title="Use my location">📍</button>
+            <div className="search-actions">
+              <button id="search-btn" className="btn btn-primary" type="submit" style={{ flex: 1 }}>Search</button>
+              <button id="location-btn" type="button" className="btn btn-secondary icon-btn" onClick={fetchByLocation} title="Use my location" aria-label="Use my location">📍</button>
+            </div>
           </form>
         </div>
 

@@ -17,9 +17,13 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response && error.response.status === 401) {
-      localStorage.removeItem('skybot_token');
-      localStorage.removeItem('skybot_user');
-      window.location.href = '/login';
+      // Don't redirect for weather API calls — those are public
+      const url = error.config?.url || '';
+      if (!url.startsWith('/weather')) {
+        localStorage.removeItem('skybot_token');
+        localStorage.removeItem('skybot_user');
+        window.location.href = '/login';
+      }
     }
     return Promise.reject(error);
   }
